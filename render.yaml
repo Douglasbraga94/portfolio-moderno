@@ -1,7 +1,7 @@
 services:
   # Backend API (Node.js Native - 100% Free)
   - type: web
-    name: portfolio-api
+    name: portfolio-api-douglas
     env: node
     plan: free
     region: oregon
@@ -13,7 +13,7 @@ services:
 
   # Frontend Static Site (Always Free)
   - type: web
-    name: portfolio-frontend
+    name: portfolio-douglas-braga
     env: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
