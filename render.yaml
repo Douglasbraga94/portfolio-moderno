@@ -19,6 +19,7 @@ services:
     staticPublishPath: frontend/dist
     plan: free
     region: ohio
-    routingRules:
-      - route: /*
-        rewrite: /index.html
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
