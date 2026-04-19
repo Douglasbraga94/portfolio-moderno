@@ -5,7 +5,6 @@ services:
     env: docker
     dockerContext: api
     dockerfilePath: api/Dockerfile
-    plan: free
     region: ohio
     envVars:
       - key: APP_JWT_SECRET
@@ -17,7 +16,6 @@ services:
     env: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
-    plan: free
     routes:
       - type: rewrite
         source: /*
