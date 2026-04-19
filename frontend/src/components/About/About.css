@@ -1,0 +1,48 @@
+.about-section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content {
+  font-family: var(--font-mono);
+}
+
+.summary-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  border-left: 2px solid var(--primary-color);
+  padding-left: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: rgba(0, 255, 65, 0.05);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.label {
+  color: var(--secondary-color);
+  font-weight: bold;
+  min-width: 50px;
+}
+
+.value {
+  color: var(--text-primary);
+}
+
+.vision-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+}

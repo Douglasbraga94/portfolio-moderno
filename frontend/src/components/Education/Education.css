@@ -1,0 +1,47 @@
+.education-section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.edu-block {
+  margin-bottom: 2.5rem;
+}
+
+.section-label {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.edu-item {
+  border-left: 2px solid var(--primary-color);
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.edu-title {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.edu-inst {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.cert-list {
+  list-style: none;
+}
+
+.cert-list li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.cert-list li::before {
+  content: '→';
+  margin-right: 0.8rem;
+  color: var(--primary-color);
+}

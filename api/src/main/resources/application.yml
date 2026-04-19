@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: portfolio-api
+
+app:
+  jwt:
+    secret: "v9y$B&E)H@McQfTjWnZr4u7x!A%C*F-JaNdRgUkXp2s5v8y/B?E(G+KbPeShVmYq" # 64-char secret for HS512
+    expiration: 3600000 # 1 hour in ms
+
+logging:
+  level:
+    org.springframework.security: DEBUG

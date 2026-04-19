@@ -1,0 +1,24 @@
+services:
+  # Backend API
+  - type: web
+    name: portfolio-api
+    env: docker
+    dockerContext: api
+    dockerfilePath: api/Dockerfile
+    plan: free
+    region: ohio
+    envVars:
+      - key: APP_JWT_SECRET
+        generateValue: true
+
+  # Frontend Static Site
+  - type: static
+    name: portfolio-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    plan: free
+    region: ohio
+    routingRules:
+      - route: /*
+        rewrite: /index.html

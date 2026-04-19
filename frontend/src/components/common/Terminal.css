@@ -1,0 +1,75 @@
+.arch-header {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.arch-number {
+  color: var(--primary-color);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.arch-title-text {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-dim);
+}
+
+.arch-content {
+  color: var(--text-primary);
+}
+
+/* Override sections for the new theme */
+.about-content {
+  font-family: var(--font-main);
+}
+
+.summary-text {
+  font-size: 1.5rem !important;
+  line-height: 1.4 !important;
+  color: var(--text-primary) !important;
+  border-left: 4px solid var(--primary-color) !important;
+  margin-bottom: 3rem !important;
+}
+
+.info-grid {
+  background: transparent !important;
+  border: none !important;
+  border-top: 1px solid var(--border-color) !important;
+  padding: 2rem 0 !important;
+}
+
+.label {
+  color: var(--primary-color) !important;
+}
+
+.skill-category {
+  border-left: 1px solid var(--border-color);
+  padding-left: 1.5rem;
+}
+
+.category-name {
+  color: var(--text-primary) !important;
+  border: none !important;
+  font-size: 1.2rem !important;
+  font-family: var(--font-display);
+}
+
+.skill-status {
+  color: var(--text-dim) !important;
+  font-weight: normal !important;
+  font-size: 0.7rem;
+}
+
+.exp-node::before {
+  background: var(--surface-color) !important;
+}
+
+.commit-id {
+  color: var(--primary-color) !important;
+}

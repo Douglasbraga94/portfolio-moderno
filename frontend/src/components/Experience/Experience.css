@@ -1,0 +1,70 @@
+.experience-section {
+  padding: 4rem 2rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 1px dashed var(--text-dim);
+}
+
+.exp-item {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.exp-node {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.exp-node::before {
+  content: '*';
+  position: absolute;
+  left: -26px;
+  color: var(--primary-color);
+  background: var(--bg-color);
+  font-weight: bold;
+}
+
+.commit-id {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.exp-meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.exp-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  color: var(--accent-color);
+}
+
+.exp-tasks {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.exp-tasks li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+  position: relative;
+}
+
+.exp-tasks li::before {
+  content: '>';
+  position: absolute;
+  left: -1.2rem;
+  color: var(--primary-color);
+}
