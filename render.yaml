@@ -5,7 +5,8 @@ services:
     env: docker
     dockerContext: api
     dockerfilePath: api/Dockerfile
-    region: ohio
+    plan: free
+    region: oregon # Região que suporta plano gratuito para Docker
     envVars:
       - key: APP_JWT_SECRET
         generateValue: true
