@@ -55,7 +55,7 @@ const ApiPlayground = () => {
 
   return (
     <section className="api-section" id="api">
-      <Terminal title="console" command={`curl -X GET https://portfolio-api.onrender.com${endpoint} -H "Authorization: Bearer [TOKEN]"`}>
+      <Terminal title="console" command={`curl -X GET https://portfolio-api-douglas.onrender.com${endpoint} -H "Authorization: Bearer [TOKEN]"`}>
         <div className="api-playground">
           <div className="api-controls">
             <div className="select-wrapper">
